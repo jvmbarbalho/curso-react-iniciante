@@ -35,6 +35,7 @@ export default function TaskList({
             </div>
           );
         })}
+        {tasks.length === 0 && <div className="empty-list">Lista Vazia</div>}
         <button onClick={addTask}>Nova Tarefa</button>
       </div>
     </div>
